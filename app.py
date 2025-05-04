@@ -17,7 +17,7 @@ app.config['STATIC_FOLDER'] = 'static'
 
 # Flask-Session yapılandırması
 app.config['SESSION_TYPE'] = 'filesystem'
-app.config['SESSION_FILE_DIR'] = os.path.join(tempfile.gettempdir(), 'flask_session')
+app.config['SESSION_FILE_DIR'] = os.path.join(os.path.dirname(__file__), 'flask_sessions')
 app.config['SESSION_FILE_THRESHOLD'] = 100
 app.config['PERMANENT_SESSION_LIFETIME'] = 1800  # 30 dakika
 Session(app)
