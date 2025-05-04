@@ -13,4 +13,6 @@ wsproto==1.2.0
 h11==0.14.0
 bidict==0.23.1
 colorama==0.4.6
-blinker==1.6.2 
+blinker==1.6.2
+gunicorn==21.2.0
+eventlet==0.35.1 

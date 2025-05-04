@@ -558,4 +558,4 @@ def load_words():
     return active_words
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=False, use_reloader=False)
