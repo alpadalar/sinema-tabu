@@ -7,7 +7,7 @@ import os
 import tempfile
 from datetime import datetime, timedelta
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 app.secret_key = 'supersecretkey'
 socketio = SocketIO(app)
 
