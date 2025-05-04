@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify, flash
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify, flash, send_from_directory
 from flask_session import Session
 from flask_socketio import SocketIO, emit
 import json
@@ -7,9 +7,13 @@ import os
 import tempfile
 from datetime import datetime, timedelta
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.secret_key = 'supersecretkey'
 socketio = SocketIO(app)
+
+# Statik dosya konfigürasyonu
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0  # Cache'i devre dışı bırak
+app.config['STATIC_FOLDER'] = 'static'
 
 # Flask-Session yapılandırması
 app.config['SESSION_TYPE'] = 'filesystem'
