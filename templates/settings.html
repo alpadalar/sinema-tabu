@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Ayarlar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kelime Ayarları</h1>
+        </header>
+
+        <main>
+            <div class="settings-menu">
+                <a href="{{ url_for('add_word') }}" class="menu-item">
+                    <i class="fas fa-plus-circle menu-icon"></i>
+                    <span>Yeni Kelime Ekle</span>
+                </a>
+                <a href="{{ url_for('word_settings') }}" class="menu-item">
+                    <i class="fas fa-edit menu-icon"></i>
+                    <span>Kelime Sözlüğü Düzenle</span>
+                </a>
+                <a href="{{ url_for('stats') }}" class="menu-item">
+                    <i class="fas fa-chart-bar menu-icon"></i>
+                    <span>İstatistikler</span>
+                </a>
+            </div>
+
+            <div class="word-list">
+                {% for word in words %}
+                <div class="word-item {% if word.disabled %}disabled{% endif %}">
+                    <div class="word-info">
+                        <span class="category">
+                            <i class="fas fa-tag"></i>
+                            {{ word.kategori }}
+                        </span>
+                        <span class="name">{{ word.isim }}</span>
+                        <div class="forbidden-words">
+                            {% for yasak in word.yasaklılar %}
+                            <span class="forbidden-word">
+                                <i class="fas fa-ban"></i>
+                                {{ yasak }}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <button onclick="toggleWord('{{ word.id }}')" class="toggle-button">
+                        <i class="fas {% if word.disabled %}fa-toggle-off{% else %}fa-toggle-on{% endif %}"></i>
+                        {{ 'Aktifleştir' if word.disabled else 'Devre Dışı Bırak' }}
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="actions">
+                <a href="{{ url_for('index') }}" class="button">
+                    <i class="fas fa-home"></i>
+                    Ana Sayfa
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleWord(wordId) {
+            fetch('/toggle_word/' + wordId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    location.reload();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

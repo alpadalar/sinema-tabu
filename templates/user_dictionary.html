@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Kullanıcı Sözlüğü</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kullanıcı Sözlüğü</h1>
+        
+        <div class="actions">
+            <a href="{{ url_for('add_word') }}" class="button">Yeni Kelime Ekle</a>
+            <button onclick="clearUserDictionary()" class="button danger">Sözlüğü Temizle</button>
+            <a href="{{ url_for('settings') }}" class="button">Geri</a>
+        </div>
+
+        <div class="word-list">
+            {% for word in user_words %}
+            <div class="word-item">
+                <div class="word-info">
+                    <span class="category">{{ word.kategori }}</span>
+                    <span class="name">{{ word.isim }}</span>
+                    <div class="forbidden-words">
+                        {% for yasak in word.yasaklılar %}
+                        <span class="forbidden-word">{{ yasak }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <button class="delete-button" 
+                        onclick="deleteWord({{ word.id }})"
+                        data-word-id="{{ word.id }}">
+                    Sil
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        async function deleteWord(wordId) {
+            if (confirm('Bu kelimeyi silmek istediğinizden emin misiniz?')) {
+                try {
+                    const response = await fetch(`/delete_word/${wordId}`, {
+                        method: 'POST'
+                    });
+                    
+                    if (response.ok) {
+                        location.reload();
+                    }
+                } catch (error) {
+                    console.error('Hata:', error);
+                }
+            }
+        }
+
+        async function clearUserDictionary() {
+            if (confirm('Tüm kullanıcı kelimelerini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz!')) {
+                try {
+                    const response = await fetch('/clear_user_dictionary', {
+                        method: 'POST'
+                    });
+                    
+                    if (response.ok) {
+                        location.reload();
+                    }
+                } catch (error) {
+                    console.error('Hata:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html> 

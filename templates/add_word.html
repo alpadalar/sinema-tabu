@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Kelime Ekle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kelime Ekle</h1>
+        </header>
+
+        <main>
+            <form method="POST" class="add-word-form">
+                <div class="form-group">
+                    <label for="word">Kelime:</label>
+                    <input type="text" id="word" name="word" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="aktör">
+                            <span>Aktör</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="film">
+                            <span>Film</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category" value="dizi">
+                            <span>Dizi</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="forbidden">Yasaklı Kelimeler (virgülle ayırın):</label>
+                    <input type="text" id="forbidden" name="forbidden" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="image_url">Resim URL'si (isteğe bağlı):</label>
+                    <input type="url" id="image_url" name="image_url" placeholder="https://example.com/image.jpg">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button">
+                        <i class="fas fa-plus"></i>
+                        Kelime Ekle
+                    </button>
+                    <a href="{{ url_for('index') }}" class="button">
+                        <i class="fas fa-home"></i>
+                        Ana Sayfa
+                    </a>
+                </div>
+            </form>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </main>
+    </div>
+</body>
+</html>

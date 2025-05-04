@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Oyun</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Top Bar -->
+        <div class="game-top-bar">
+            <div class="game-title">
+                <h1>Sinema Tabu</h1>
+            </div>
+            <div class="game-stats-bar">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span id="timer">{{ duration }}</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-redo"></i>
+                    <span id="passes">{{ remaining }}</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Game Content -->
+        <main class="game-main">
+            <div class="game-word" id="word">{{ word.word }}</div>
+            
+            <div class="game-image" id="word-image">
+                {% if word.image_url %}
+                <img src="{{ word.image_url }}" alt="{{ word.word }}" onerror="this.style.display='none'">
+                {% else %}
+                <div class="no-image">
+                    <i class="fas fa-image"></i>
+                    <span>Resim Yok</span>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="forbidden-words" id="forbidden">
+                {% for forbidden in word.forbidden_words %}
+                <span class="forbidden-word">{{ forbidden }}</span>
+                {% endfor %}
+            </div>
+
+            <div class="game-controls">
+                <button class="button success-button" onclick="correct()">
+                    <i class="fas fa-check"></i>
+                    Doğru
+                </button>
+                <button class="button warning-button" id="passButton" onclick="pass()">
+                    <i class="fas fa-redo"></i>
+                    Pas
+                </button>
+                <button class="button danger-button" onclick="wrong()">
+                    <i class="fas fa-times"></i>
+                    Tabu
+                </button>
+                <button class="button end-game-button" onclick="endGame()">
+                    <i class="fas fa-stop"></i>
+                    Oyunu Bitir
+                </button>
+            </div>
+        </main>
+
+        <!-- Game Over Screen -->
+        <div class="game-over-overlay" id="game-over-overlay" style="display: none;"></div>
+        <div class="game-over" id="game-over" style="display: none;">
+            <h2>Oyun Bitti!</h2>
+            <div class="final-stats">
+                <div class="stat-card">
+                    <i class="fas fa-check"></i>
+                    <h3>Doğru</h3>
+                    <p id="final-correct">0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-times"></i>
+                    <h3>Tabu</h3>
+                    <p id="final-taboo">0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-redo"></i>
+                    <h3>Pas</h3>
+                    <p id="final-passes">0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Toplam Puan</h3>
+                    <p id="final-score">0</p>
+                </div>
+            </div>
+            <a href="{{ url_for('index') }}" class="button">
+                <i class="fas fa-home"></i>
+                Ana Sayfaya Dön
+            </a>
+        </div>
+
+        <!-- End Game Popup -->
+        <div class="popup-overlay" id="endGamePopup" style="display: none;">
+            <div class="popup-content">
+                <h3>Oyunu Bitir</h3>
+                <p>Oyunu bitirmek istediğinizden emin misiniz?</p>
+                <div class="popup-buttons">
+                    <button class="button danger-button" onclick="confirmEndGame()">
+                        <i class="fas fa-stop"></i>
+                        Evet, Bitir
+                    </button>
+                    <button class="button" onclick="closeEndGamePopup()">
+                        <i class="fas fa-times"></i>
+                        İptal
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let timer = parseInt('{{ duration }}');
+        let timerInterval;
+
+        function updateTimer() {
+            if (timer > 0) {
+                timer--;
+                document.getElementById('timer').textContent = timer;
+                if (timer <= 0) {
+                    clearInterval(timerInterval);
+                    socket.emit('game_over');
+                }
+            }
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+
+        socket.on('connect', () => {
+            console.log('Bağlandı');
+            startTimer();
+        });
+
+        socket.on('word', (data) => {
+            document.getElementById('word').textContent = data.word;
+            document.getElementById('forbidden').innerHTML = data.forbidden_words.map(word => 
+                `<span class="forbidden-word">${word}</span>`
+            ).join('');
+
+            if (data.image_url) {
+                document.getElementById('word-image').innerHTML = `<img src="${data.image_url}" alt="${data.word}" onerror="this.style.display='none'">`;
+            } else {
+                document.getElementById('word-image').innerHTML = `
+                    <div class="no-image">
+                        <i class="fas fa-image"></i>
+                        <span>Resim Yok</span>
+                    </div>
+                `;
+            }
+        });
+
+        socket.on('timer', (data) => {
+            timer = data.time;
+            document.getElementById('timer').textContent = timer;
+        });
+
+        socket.on('passes', (data) => {
+            document.getElementById('passes').textContent = data.passes;
+            const passButton = document.getElementById('passButton');
+            if (data.passes <= 0) {
+                passButton.disabled = true;
+                passButton.classList.add('disabled');
+            } else {
+                passButton.disabled = false;
+                passButton.classList.remove('disabled');
+            }
+        });
+
+        socket.on('score', (data) => {
+            document.getElementById('score').textContent = data.score;
+        });
+
+        socket.on('game_over', (data) => {
+            clearInterval(timerInterval);
+            document.getElementById('timer').textContent = 'Süre Bitti!';
+            document.getElementById('word').textContent = 'Oyun Bitti!';
+            document.getElementById('forbidden').textContent = '';
+            document.getElementById('score').textContent = data.score;
+            document.getElementById('final-correct').textContent = data.correct;
+            document.getElementById('final-taboo').textContent = data.wrong;
+            document.getElementById('final-passes').textContent = data.skipped;
+            document.getElementById('final-score').textContent = data.score;
+            document.getElementById('word-image').innerHTML = '<div class="no-image"><i class="fas fa-gamepad"></i><span>Oyun Bitti!</span></div>';
+            document.getElementById('game-over-overlay').style.display = 'block';
+            document.getElementById('game-over').style.display = 'block';
+        });
+
+        function correct() {
+            socket.emit('next_word', { action: 'correct' });
+        }
+
+        function wrong() {
+            socket.emit('next_word', { action: 'taboo' });
+        }
+
+        function pass() {
+            socket.emit('next_word', { action: 'pass' });
+        }
+
+        function endGame() {
+            document.getElementById('endGamePopup').style.display = 'flex';
+        }
+
+        function closeEndGamePopup() {
+            document.getElementById('endGamePopup').style.display = 'none';
+        }
+
+        function confirmEndGame() {
+            socket.emit('game_over');
+            closeEndGamePopup();
+        }
+
+        document.getElementById('endGamePopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeEndGamePopup();
+            }
+        });
+    </script>
+</body>
+</html>

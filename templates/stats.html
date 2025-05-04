@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - İstatistikler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>İstatistikler</h1>
+            <p class="subtitle">Kelime istatistiklerini görüntüleyin</p>
+        </header>
+
+        <main>
+            <div class="stats-section">
+                <div class="stats-header">
+                    <h2>Genel İstatistikler</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <h3>Toplam Kelime</h3>
+                        <span class="stats-value">{{ stats.total_words }}</span>
+                    </div>
+                    <div class="stats-card">
+                        <h3>Aktif Kelime</h3>
+                        <span class="stats-value">{{ stats.active_words }}</span>
+                    </div>
+                    <div class="stats-card">
+                        <h3>Devre Dışı Kelime</h3>
+                        <span class="stats-value">{{ stats.disabled_words }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-stats-section">
+                <div class="stats-header">
+                    <h2>Kategori İstatistikleri</h2>
+                </div>
+                <div class="stats-grid">
+                    {% set categories = ['aktör', 'film', 'dizi'] %}
+                    {% for category in categories %}
+                    <div class="stats-card">
+                        <h3>{{ category|capitalize }}</h3>
+                        <div class="category-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Toplam:</span>
+                                <span class="stat-value">{{ stats.category_counts[category] }}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Aktif:</span>
+                                <span class="stat-value">{{ stats.category_status[category].active }}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Devre Dışı:</span>
+                                <span class="stat-value">{{ stats.category_status[category].disabled }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="word-lists-section">
+                <div class="stats-header">
+                    <h2>Kelime Listeleri</h2>
+                </div>
+                {% for category in categories %}
+                <div class="category-words-section">
+                    <div class="category-words-header" onclick="toggleWordList('{{ category }}')">
+                        <h3>
+                            <i class="fas fa-chevron-right word-list-icon" id="word-icon-{{ category }}"></i>
+                            {{ category|capitalize }} Kelimeleri
+                        </h3>
+                    </div>
+                    
+                    <div class="word-list" id="word-list-{{ category }}" style="display: none;">
+                        {% set category_words = words|selectattr("kategori", "equalto", category)|sort(attribute="isim") %}
+                        {% for word in category_words %}
+                        <div class="word-item {% if word.disabled %}disabled{% endif %}">
+                            <span class="word-name">{{ word.isim }}</span>
+                            <span class="word-status">
+                                {% if word.disabled %}
+                                <i class="fas fa-ban"></i> Devre Dışı
+                                {% else %}
+                                <i class="fas fa-check-circle"></i> Aktif
+                                {% endif %}
+                            </span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="form-actions">
+                <a href="{{ url_for('index') }}" class="button">
+                    <i class="fas fa-arrow-left"></i>
+                    Ana Sayfaya Dön
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleWordList(category) {
+            const content = document.getElementById(`word-list-${category}`);
+            const icon = document.getElementById(`word-icon-${category}`);
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.style.display = 'none';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-right');
+            }
+        }
+    </script>
+</body>
+</html> 

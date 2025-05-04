@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sinema Tabu</h1>
+            <p class="subtitle">Eğlenceli bir sinema bilgi oyunu</p>
+        </header>
+
+        <main class="centered-content">
+            <form method="POST" action="{{ url_for('start_game') }}" class="game-settings">
+                <div class="form-group">
+                    <label>Süre (saniye):</label>
+                    <div class="number-input">
+                        <button type="button" class="number-btn minus" onclick="decrement('duration')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" name="duration" id="duration" value="60" min="30" max="300" required>
+                        <button type="button" class="number-btn plus" onclick="increment('duration')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" onclick="setDuration(30)">30 Saniye</button>
+                        <button type="button" class="preset-btn" onclick="setDuration(45)">45 Saniye</button>
+                        <button type="button" class="preset-btn" onclick="setDuration(60)">1 Dakika</button>
+                        <button type="button" class="preset-btn" onclick="setDuration(90)">90 Saniye</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Pas Hakkı:</label>
+                    <div class="number-input">
+                        <button type="button" class="number-btn minus" onclick="decrement('passes')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" name="passes" id="passes" value="3" min="0" max="10" required>
+                        <button type="button" class="number-btn plus" onclick="increment('passes')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="preset-buttons">
+                        <button type="button" class="preset-btn" onclick="setPasses(3)">3 Pas</button>
+                        <button type="button" class="preset-btn" onclick="setPasses(5)">5 Pas</button>
+                        <button type="button" class="preset-btn" onclick="setPasses(0)">Pas Yok</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategoriler:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="categories" value="aktör" checked>
+                            <span>Aktör</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="categories" value="film" checked>
+                            <span>Film</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="categories" value="dizi" checked>
+                            <span>Dizi</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button start-button">
+                        <i class="fas fa-play"></i>
+                        Oyunu Başlat
+                    </button>
+                </div>
+            </form>
+
+            <div class="menu-button">
+                <button class="button menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                    Menü
+                </button>
+                <div class="menu-dropdown" id="menuDropdown">
+                    <a href="{{ url_for('word_settings') }}" class="menu-item">
+                        <i class="fas fa-list"></i>
+                        Kelime Listesi
+                    </a>
+                    <a href="{{ url_for('add_word') }}" class="menu-item">
+                        <i class="fas fa-plus"></i>
+                        Kelime Ekle
+                    </a>
+                    <a href="{{ url_for('stats') }}" class="menu-item">
+                        <i class="fas fa-chart-bar"></i>
+                        İstatistikler
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function increment(id) {
+            const input = document.getElementById(id);
+            const max = parseInt(input.getAttribute('max'));
+            if (parseInt(input.value) < max) {
+                input.value = parseInt(input.value) + 1;
+            }
+        }
+
+        function decrement(id) {
+            const input = document.getElementById(id);
+            const min = parseInt(input.getAttribute('min'));
+            if (parseInt(input.value) > min) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+
+        function setDuration(seconds) {
+            document.getElementById('duration').value = seconds;
+        }
+
+        function setPasses(count) {
+            document.getElementById('passes').value = count;
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('menuDropdown');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Menü dışına tıklandığında menüyü kapat
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menuDropdown');
+            const menuButton = document.querySelector('.menu-toggle');
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

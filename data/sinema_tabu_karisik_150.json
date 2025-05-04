@@ -1,0 +1,1952 @@
+[
+  {
+    "id": 1,
+    "kategori": "aktör",
+    "kategori_sirasi": 1,
+    "isim": "Kıvanç Tatlıtuğ",
+    "yasaklılar": [
+      "yakışıklı",
+      "Aşk-ı Memnu",
+      "Kuzey",
+      "model"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/9J4KWKollSGTAADhUVEgAm4lenx.jpg"
+  },
+  {
+    "id": 2,
+    "kategori": "aktör",
+    "kategori_sirasi": 2,
+    "isim": "Haluk Bilginer",
+    "yasaklılar": [
+      "Şahsiyet",
+      "tiyatro",
+      "ödül",
+      "usta"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/krCEBAIGmEUUcA4GpLt3RiTHKLC.jpg"
+  },
+  {
+    "id": 3,
+    "kategori": "aktör",
+    "kategori_sirasi": 3,
+    "isim": "Kenan İmirzalıoğlu",
+    "yasaklılar": [
+      "Deli Yürek",
+      "sunucu",
+      "polis",
+      "yakışıklı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/abMkbyXR4Oul8mLmjWv0qRnsbgF.jpg"
+  },
+  {
+    "id": 4,
+    "kategori": "aktör",
+    "kategori_sirasi": 4,
+    "isim": "Engin Akyürek",
+    "yasaklılar": [
+      "Kara Para Aşk",
+      "romantik",
+      "oyuncu",
+      "dizi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/1J9ezaZFQpDqV73nt8wirQ1Ofy7.jpg"
+  },
+  {
+    "id": 5,
+    "kategori": "aktör",
+    "kategori_sirasi": 5,
+    "isim": "Burak Özçivit",
+    "yasaklılar": [
+      "Kuruluş Osman",
+      "yakışıklı",
+      "model",
+      "dizi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/pF8EHDM2ETDT2X2Pwg3Ak0ZCPAY.jpg"
+  },
+  {
+    "id": 6,
+    "kategori": "aktör",
+    "kategori_sirasi": 6,
+    "isim": "Barış Arduç",
+    "yasaklılar": [
+      "Kiralık Aşk",
+      "Alparslan",
+      "romantik",
+      "komedi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/nLQ9ubRuIBSSotSNDsuQ5XKnw4C.jpg"
+  },
+  {
+    "id": 7,
+    "kategori": "aktör",
+    "kategori_sirasi": 7,
+    "isim": "Uraz Kaygılaroğlu",
+    "yasaklılar": [
+      "Sefirin Kızı",
+      "komedi",
+      "absürt",
+      "sakallı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/rzUueu2dYxhq6aXNQ0H9hfXyEKY.jpg"
+  },
+  {
+    "id": 8,
+    "kategori": "aktör",
+    "kategori_sirasi": 8,
+    "isim": "Feyyaz Yiğit",
+    "yasaklılar": [
+      "Gibi",
+      "absürt",
+      "komedyen",
+      "senarist"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/i2fp1VkLo7LJfqpQ8eYUIiIocGB.jpg"
+  },
+  {
+    "id": 9,
+    "kategori": "aktör",
+    "kategori_sirasi": 9,
+    "isim": "Cem Yılmaz",
+    "yasaklılar": [
+      "komedyen",
+      "G.O.R.A",
+      "stand-up",
+      "film"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/8X5OyMb392DBFaXmQDI4TXAVo6n.jpg"
+  },
+  {
+    "id": 10,
+    "kategori": "aktör",
+    "kategori_sirasi": 10,
+    "isim": "Mehmet Günsür",
+    "yasaklılar": [
+      "Şehzade",
+      "İtalya",
+      "Muhteşem",
+      "yakışıklı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/guAQPsye0n5CoLvl0WrtDmbHKDM.jpg"
+  },
+  {
+    "id": 11,
+    "kategori": "aktör",
+    "kategori_sirasi": 11,
+    "isim": "Taner Ölmez",
+    "yasaklılar": [
+      "Mucize Doktor",
+      "doktor",
+      "Ali",
+      "TV"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/QG3bNfNw5aRqEzhttSIEey4nBt.jpg"
+  },
+  {
+    "id": 12,
+    "kategori": "aktör",
+    "kategori_sirasi": 12,
+    "isim": "Erkan Kolçak Köstendil",
+    "yasaklılar": [
+      "Vartolu",
+      "Çukur",
+      "rap",
+      "oyuncu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/7WtThUnDnNbLxYFH7ZYzjivvMUi.jpg"
+  },
+  {
+    "id": 13,
+    "kategori": "aktör",
+    "kategori_sirasi": 13,
+    "isim": "Nejat İşler",
+    "yasaklılar": [
+      "karizmatik",
+      "hastalık",
+      "oyuncu",
+      "tiyatro"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/wZtnNstHPW5ckkAB7xy8LtmTiXZ.jpg"
+  },
+  {
+    "id": 14,
+    "kategori": "aktör",
+    "kategori_sirasi": 14,
+    "isim": "Okan Yalabık",
+    "yasaklılar": [
+      "Pargalı",
+      "Muhteşem",
+      "Osmanlı",
+      "dizi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/xWbbpbln5lL2nlaPKDzGrxWe10E.jpg"
+  },
+  {
+    "id": 15,
+    "kategori": "aktör",
+    "kategori_sirasi": 15,
+    "isim": "İsmail Hacıoğlu",
+    "yasaklılar": [
+      "çocuk",
+      "drama",
+      "yetim",
+      "rol"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/6XxaoTcXe5potGh4kbgo1jpPXxV.jpg"
+  },
+  {
+    "id": 16,
+    "kategori": "aktör",
+    "kategori_sirasi": 16,
+    "isim": "Serkan Keskin",
+    "yasaklılar": [
+      "Leyla",
+      "absürt",
+      "İsmail",
+      "tiyatro"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3TPGvIpgHrP7q6BDEtwWnnVtcQJ.jpg"
+  },
+  {
+    "id": 17,
+    "kategori": "aktör",
+    "kategori_sirasi": 17,
+    "isim": "Ali Atay",
+    "yasaklılar": [
+      "Leyla",
+      "komedi",
+      "yönetmen",
+      "oyuncu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/qPX0tvxTF5R79MQlokibh40t5j5.jpg"
+  },
+  {
+    "id": 18,
+    "kategori": "aktör",
+    "kategori_sirasi": 18,
+    "isim": "Kerem Bürsin",
+    "yasaklılar": [
+      "Sen Çal Kapımı",
+      "yakışıklı",
+      "Amerika",
+      "model"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/mSRS166JfH0qAUjZUFMp9nbWdC6.jpg"
+  },
+  {
+    "id": 19,
+    "kategori": "aktör",
+    "kategori_sirasi": 19,
+    "isim": "İlker Kaleli",
+    "yasaklılar": [
+      "Poyraz",
+      "karizmatik",
+      "aşk",
+      "oyuncu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3ibfcy5q0CD4tY17bxW8GB1IJSx.jpg"
+  },
+  {
+    "id": 20,
+    "kategori": "aktör",
+    "kategori_sirasi": 20,
+    "isim": "Aras Bulut İynemli",
+    "yasaklılar": [
+      "Çukur",
+      "Yamaç",
+      "ağır",
+      "oyuncu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/408OA4bMx1ADKMkIjXxWrzQ0dhN.jpg"
+  },
+  {
+    "id": 21,
+    "kategori": "aktör",
+    "kategori_sirasi": 21,
+    "isim": "Tolga Sarıtaş",
+    "yasaklılar": [
+      "Söz",
+      "asker",
+      "dizi",
+      "genç"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/1q8Xxw3WKAMVj6NZzeXDh3XQxvN.jpg"
+  },
+  {
+    "id": 22,
+    "kategori": "aktör",
+    "kategori_sirasi": 22,
+    "isim": "Boran Kuzum",
+    "yasaklılar": [
+      "Vatanım Sensin",
+      "tiyatro",
+      "genç",
+      "dizi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/fglvct2Iwq7evJJvOHHEidJcdXV.jpg"
+  },
+  {
+    "id": 23,
+    "kategori": "aktör",
+    "kategori_sirasi": 23,
+    "isim": "Onur Tuna",
+    "yasaklılar": [
+      "Mahkum",
+      "jüri",
+      "doktor",
+      "oyuncu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/kSxQUj9iampPna4XyuFfDvDEFcx.jpg"
+  },
+  {
+    "id": 24,
+    "kategori": "aktör",
+    "kategori_sirasi": 24,
+    "isim": "Murat Yıldırım",
+    "yasaklılar": [
+      "sunucu",
+      "dizi",
+      "Kim Milyoner",
+      "aşk"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/qQmVCeZs4Hji41loNk6KHRNNJZJ.jpg"
+  },
+  {
+    "id": 25,
+    "kategori": "aktör",
+    "kategori_sirasi": 25,
+    "isim": "Fatih Artman",
+    "yasaklılar": [
+      "Behzat",
+      "komiser",
+      "polis",
+      "komedi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/xCzXSuy7JZ418Yb0x6FR6pf2p3J.jpg"
+  },
+  {
+    "id": 26,
+    "kategori": "aktör",
+    "kategori_sirasi": 26,
+    "isim": "Leonardo DiCaprio",
+    "yasaklılar": [
+      "Titanic",
+      "Oscars",
+      "Inception",
+      "Hollywood"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ts9l18VkDSooRGDWIeQegNVHciC.jpg"
+  },
+  {
+    "id": 27,
+    "kategori": "aktör",
+    "kategori_sirasi": 27,
+    "isim": "Brad Pitt",
+    "yasaklılar": [
+      "Fight Club",
+      "yakışıklı",
+      "Angelina",
+      "Troy"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/bSk1OGSQ95RDxbUYuIw2NzJDcCa.jpg"
+  },
+  {
+    "id": 28,
+    "kategori": "aktör",
+    "kategori_sirasi": 28,
+    "isim": "Johnny Depp",
+    "yasaklılar": [
+      "Pirates",
+      "Jack",
+      "garip",
+      "makyaj"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/wcI594cwM4ArPwvRd2IU0Z0yLuh.jpg"
+  },
+  {
+    "id": 29,
+    "kategori": "aktör",
+    "kategori_sirasi": 29,
+    "isim": "Tom Hanks",
+    "yasaklılar": [
+      "Forrest",
+      "Oscar",
+      "drama",
+      "oyunculuk"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg"
+  },
+  {
+    "id": 30,
+    "kategori": "aktör",
+    "kategori_sirasi": 30,
+    "isim": "Robert Downey Jr.",
+    "yasaklılar": [
+      "Iron Man",
+      "Marvel",
+      "Tony",
+      "MCU"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+  },
+  {
+    "id": 31,
+    "kategori": "aktör",
+    "kategori_sirasi": 31,
+    "isim": "Chris Hemsworth",
+    "yasaklılar": [
+      "Thor",
+      "Avengers",
+      "kaslı",
+      "Avustralya"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+  },
+  {
+    "id": 32,
+    "kategori": "aktör",
+    "kategori_sirasi": 32,
+    "isim": "Ryan Gosling",
+    "yasaklılar": [
+      "La La Land",
+      "Barbie",
+      "yakışıklı",
+      "duygusal"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/asoKC7CLCqpZKZDL6iovNurQUdf.jpg"
+  },
+  {
+    "id": 33,
+    "kategori": "aktör",
+    "kategori_sirasi": 33,
+    "isim": "Matt Damon",
+    "yasaklılar": [
+      "Jason",
+      "Marslı",
+      "aksiyon",
+      "senaryo"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/4KAxONjmVq7qcItdXo38SYtnpul.jpg"
+  },
+  {
+    "id": 34,
+    "kategori": "aktör",
+    "kategori_sirasi": 34,
+    "isim": "Tom Holland",
+    "yasaklılar": [
+      "Spider-Man",
+      "genç",
+      "Marvel",
+      "Hollanda"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/bBRlrpJm9XkNSg0YT5LCaxqoFMX.jpg"
+  },
+  {
+    "id": 35,
+    "kategori": "aktör",
+    "kategori_sirasi": 35,
+    "isim": "Christian Bale",
+    "yasaklılar": [
+      "Batman",
+      "rol",
+      "psikolojik",
+      "dönüşüm"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+  },
+  {
+    "id": 36,
+    "kategori": "aktör",
+    "kategori_sirasi": 36,
+    "isim": "Benedict Cumberbatch",
+    "yasaklılar": [
+      "Sherlock",
+      "Doctor",
+      "zeka",
+      "İngiliz"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/fBEucxECxGLKVHBznO0qHtCGiMO.jpg"
+  },
+  {
+    "id": 37,
+    "kategori": "aktör",
+    "kategori_sirasi": 37,
+    "isim": "Denzel Washington",
+    "yasaklılar": [
+      "Oscar",
+      "karizma",
+      "lider",
+      "eğitim"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/9Iyt3wbsla5bM6IzbICDVnBhkER.jpg"
+  },
+  {
+    "id": 38,
+    "kategori": "aktör",
+    "kategori_sirasi": 38,
+    "isim": "Joaquin Phoenix",
+    "yasaklılar": [
+      "Joker",
+      "drama",
+      "garip",
+      "oyunculuk"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+  },
+  {
+    "id": 39,
+    "kategori": "aktör",
+    "kategori_sirasi": 39,
+    "isim": "Michael B. Jordan",
+    "yasaklılar": [
+      "Creed",
+      "Black Panther",
+      "fit",
+      "genç"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/hz9AOUWZ2zzS0dpPJ1yQv2grA35.jpg"
+  },
+  {
+    "id": 40,
+    "kategori": "aktör",
+    "kategori_sirasi": 40,
+    "isim": "Adam Driver",
+    "yasaklılar": [
+      "Star Wars",
+      "drama",
+      "Kylo",
+      "ses"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/rsjwgpV2OukxOJ9HEiEyf4qu1vR.jpg"
+  },
+  {
+    "id": 41,
+    "kategori": "aktör",
+    "kategori_sirasi": 41,
+    "isim": "Hugh Jackman",
+    "yasaklılar": [
+      "Wolverine",
+      "müzikal",
+      "X-Men",
+      "Avustralya"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg"
+  },
+  {
+    "id": 42,
+    "kategori": "aktör",
+    "kategori_sirasi": 42,
+    "isim": "Daniel Radcliffe",
+    "yasaklılar": [
+      "Harry",
+      "sihir",
+      "çocuk",
+      "İngiltere"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/iPg0J9UzAlPj1fLEJNllpW9IhGe.jpg"
+  },
+  {
+    "id": 43,
+    "kategori": "aktör",
+    "kategori_sirasi": 43,
+    "isim": "Will Smith",
+    "yasaklılar": [
+      "komedi",
+      "Ali",
+      "Oscar",
+      "tokat"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/1QqaRZ8neYlqLx7ODZC4as47wUV.jpg"
+  },
+  {
+    "id": 44,
+    "kategori": "aktör",
+    "kategori_sirasi": 44,
+    "isim": "Henry Cavill",
+    "yasaklılar": [
+      "Superman",
+      "yakışıklı",
+      "The Witcher",
+      "kas"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+  },
+  {
+    "id": 45,
+    "kategori": "aktör",
+    "kategori_sirasi": 45,
+    "isim": "Keanu Reeves",
+    "yasaklılar": [
+      "Matrix",
+      "John",
+      "sessiz",
+      "karizma"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+  },
+  {
+    "id": 46,
+    "kategori": "aktör",
+    "kategori_sirasi": 46,
+    "isim": "Andrew Garfield",
+    "yasaklılar": [
+      "Spider-Man",
+      "ağ",
+      "duygusal",
+      "İngiliz"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg"
+  },
+  {
+    "id": 47,
+    "kategori": "aktör",
+    "kategori_sirasi": 47,
+    "isim": "Morgan Freeman",
+    "yasaklılar": [
+      "ses",
+      "bilge",
+      "Shawshank",
+      "oyunculuk"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/jPsLqiYGSofU4s6BjrxnefMfabb.jpg"
+  },
+  {
+    "id": 48,
+    "kategori": "aktör",
+    "kategori_sirasi": 48,
+    "isim": "Robert Pattinson",
+    "yasaklılar": [
+      "Twilight",
+      "Batman",
+      "vampir",
+      "yakışıklı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
+  },
+  {
+    "id": 49,
+    "kategori": "aktör",
+    "kategori_sirasi": 49,
+    "isim": "Jake Gyllenhaal",
+    "yasaklılar": [
+      "Nightcrawler",
+      "duygusal",
+      "Donnie",
+      "film"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/rJdYHYNhlcOBwbPvDZVvt1xw7bi.jpg"
+  },
+  {
+    "id": 50,
+    "kategori": "aktör",
+    "kategori_sirasi": 50,
+    "isim": "Mark Ruffalo",
+    "yasaklılar": [
+      "Hulk",
+      "Avengers",
+      "bilim",
+      "duyarlı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+  },
+  {
+    "id": 51,
+    "kategori": "film",
+    "kategori_sirasi": 1,
+    "isim": "Recep İvedik",
+    "yasaklılar": [
+      "Şahan",
+      "köylü",
+      "komedi",
+      "sinema"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/cTTo0PlRBzupo3zj8EoJXzYnj1i.jpg"
+  },
+  {
+    "id": 52,
+    "kategori": "film",
+    "kategori_sirasi": 2,
+    "isim": "Karakomik Filmler",
+    "yasaklılar": [
+      "Cem",
+      "Yılmaz",
+      "dram",
+      "bağımsız"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/6eOFH9Ib9ZMDf5W7gczM9rUNk0v.jpg"
+  },
+  {
+    "id": 53,
+    "kategori": "film",
+    "kategori_sirasi": 3,
+    "isim": "Organize İşler",
+    "yasaklılar": [
+      "Yılmaz",
+      "dolandırıcı",
+      "İstanbul",
+      "sazan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/yHVRfj6x7Mr1d8Ew3lysD9SsIX0.jpg"
+  },
+  {
+    "id": 54,
+    "kategori": "film",
+    "kategori_sirasi": 4,
+    "isim": "Ayla",
+    "yasaklılar": [
+      "Kore",
+      "asker",
+      "çocuk",
+      "yetim"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/8RELLU0RK9hRIteLzHFZ0dK8YSi.jpg"
+  },
+  {
+    "id": 55,
+    "kategori": "film",
+    "kategori_sirasi": 5,
+    "isim": "Mucize",
+    "yasaklılar": [
+      "engelli",
+      "köy",
+      "öğretmen",
+      "dağ"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/baXozaGF8180QrZFuqlPrlLqCQc.jpg"
+  },
+  {
+    "id": 56,
+    "kategori": "film",
+    "kategori_sirasi": 6,
+    "isim": "7. Koğuştaki Mucize",
+    "yasaklılar": [
+      "baba",
+      "kız",
+      "cezaevi",
+      "adalet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/bOth4QmNyEkalwahfPCfiXjNh1r.jpg"
+  },
+  {
+    "id": 57,
+    "kategori": "film",
+    "kategori_sirasi": 7,
+    "isim": "Eşkıya",
+    "yasaklılar": [
+      "Baran",
+      "köy",
+      "İstanbul",
+      "intikam"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/nRr6jmqHczMCS3UfZLGQr5pksmd.jpg"
+  },
+  {
+    "id": 58,
+    "kategori": "film",
+    "kategori_sirasi": 8,
+    "isim": "Bergen",
+    "yasaklılar": [
+      "şarkıcı",
+      "arabesk",
+      "şiddet",
+      "trajedi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/mxGDZUBAP5bsEONiiYvMhc4GJS5.jpg"
+  },
+  {
+    "id": 59,
+    "kategori": "film",
+    "kategori_sirasi": 9,
+    "isim": "Kelebeğin Rüyası",
+    "yasaklılar": [
+      "şiir",
+      "verem",
+      "genç",
+      "Zonguldak"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/y3tvOh6QmyQDSth9EKKNzpdaZ0y.jpg"
+  },
+  {
+    "id": 60,
+    "kategori": "film",
+    "kategori_sirasi": 10,
+    "isim": "Babam ve Oğlum",
+    "yasaklılar": [
+      "Ege",
+      "baba",
+      "dram",
+      "12 Eylül"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/dcKY23xowYTU9B1cagUdHQwsxOB.jpg"
+  },
+  {
+    "id": 61,
+    "kategori": "film",
+    "kategori_sirasi": 11,
+    "isim": "Dedemin İnsanları",
+    "yasaklılar": [
+      "mübadele",
+      "Girit",
+      "aile",
+      "torun"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/6E8xkjf8mQDjd53EH6mr969evLo.jpg"
+  },
+  {
+    "id": 62,
+    "kategori": "film",
+    "kategori_sirasi": 12,
+    "isim": "Vizontele",
+    "yasaklılar": [
+      "televizyon",
+      "köy",
+      "gelişim",
+      "komedi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/d9AxcdFiJTHZujXxZmygZpi7il5.jpg"
+  },
+  {
+    "id": 63,
+    "kategori": "film",
+    "kategori_sirasi": 13,
+    "isim": "Aşk Tesadüfleri Sever",
+    "yasaklılar": [
+      "tesadüf",
+      "aşk",
+      "Ankara",
+      "fotoğraf"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/yGGAVANrwyRILduyEl6godYCgqX.jpg"
+  },
+  {
+    "id": 64,
+    "kategori": "film",
+    "kategori_sirasi": 14,
+    "isim": "Prestij Meselesi",
+    "yasaklılar": [
+      "Mahsun",
+      "müzik",
+      "hayat",
+      "nostalji"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/5Fsr8mHyd0GxQYBl83357e23kCs.jpg"
+  },
+  {
+    "id": 65,
+    "kategori": "film",
+    "kategori_sirasi": 15,
+    "isim": "Cinayet Süsü",
+    "yasaklılar": [
+      "komiser",
+      "absürt",
+      "ekip",
+      "katil"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/eUwpfbOIYr9dpjG45pNkiqob9mC.jpg"
+  },
+  {
+    "id": 66,
+    "kategori": "film",
+    "kategori_sirasi": 16,
+    "isim": "Kutsal Damacana",
+    "yasaklılar": [
+      "şeytan",
+      "imam",
+      "komedi",
+      "büyü"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/iWXTV2ElMaxBl9HsiQFJCrfEvpk.jpg"
+  },
+  {
+    "id": 67,
+    "kategori": "film",
+    "kategori_sirasi": 17,
+    "isim": "Deliler: Fatih’in Fermanı",
+    "yasaklılar": [
+      "Osmanlı",
+      "savaş",
+      "deliler",
+      "tarih"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/cSCuvcNM4SvMK5hUNDD94V0NjRP.jpg"
+  },
+  {
+    "id": 68,
+    "kategori": "film",
+    "kategori_sirasi": 18,
+    "isim": "GORA",
+    "yasaklılar": [
+      "Cem",
+      "uzay",
+      "komedi",
+      "robot"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ynPHp91bGTVjukRiNV7rwYEfHFT.jpg"
+  },
+  {
+    "id": 69,
+    "kategori": "film",
+    "kategori_sirasi": 19,
+    "isim": "Arif V 216",
+    "yasaklılar": [
+      "zaman",
+      "robot",
+      "Cem",
+      "film"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3meMMp53LR3kWiRQm7mhS2pt4f4.jpg"
+  },
+  {
+    "id": 70,
+    "kategori": "film",
+    "kategori_sirasi": 20,
+    "isim": "Aile Arasında",
+    "yasaklılar": [
+      "evlilik",
+      "komedi",
+      "aile",
+      "sahte"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/lxA6UjZqRX1LFCQ6kgjpbCCP3JI.jpg"
+  },
+  {
+    "id": 71,
+    "kategori": "film",
+    "kategori_sirasi": 21,
+    "isim": "İncir Reçeli",
+    "yasaklılar": [
+      "aşk",
+      "hüzün",
+      "şarkı",
+      "ölüm"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/7prnyv5OnRoQv3YIqN97Ib3dDQj.jpg"
+  },
+  {
+    "id": 72,
+    "kategori": "film",
+    "kategori_sirasi": 22,
+    "isim": "Bizim İçin Şampiyon",
+    "yasaklılar": [
+      "at",
+      "jokey",
+      "aşk",
+      "gerçek"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/wlbdp77MMh1R0TWRZjsYGQTLIVb.jpg"
+  },
+  {
+    "id": 73,
+    "kategori": "film",
+    "kategori_sirasi": 23,
+    "isim": "İtirazım Var",
+    "yasaklılar": [
+      "imam",
+      "cinayet",
+      "soruşturma",
+      "tuhaf"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/sIoARCZEJA69wAkyOZWvZW4hRUs.jpg"
+  },
+  {
+    "id": 74,
+    "kategori": "film",
+    "kategori_sirasi": 24,
+    "isim": "Hayat Var",
+    "yasaklılar": [
+      "kız",
+      "boğaz",
+      "sessizlik",
+      "anne"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/s8HnZ41Eq82E7yXHjg49xHaGHnN.jpg"
+  },
+  {
+    "id": 75,
+    "kategori": "film",
+    "kategori_sirasi": 25,
+    "isim": "Kış Uykusu",
+    "yasaklılar": [
+      "tiyatro",
+      "taşra",
+      "kar",
+      "dram"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/95j83qOqH3Ivz4RYkaSjGT0VSNr.jpg"
+  },
+  {
+    "id": 76,
+    "kategori": "film",
+    "kategori_sirasi": 26,
+    "isim": "Ahlat Ağacı",
+    "yasaklılar": [
+      "kitap",
+      "baba",
+      "köy",
+      "sorgu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/s7kGE1MChkHD5VX8sv7SOGabGMZ.jpg"
+  },
+  {
+    "id": 77,
+    "kategori": "film",
+    "kategori_sirasi": 27,
+    "isim": "Bir Zamanlar Anadolu’da",
+    "yasaklılar": [
+      "cinayet",
+      "bozkır",
+      "gece",
+      "doktor"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/o08n2xyXGTkzKy122TTNat57SHb.jpg"
+  },
+  {
+    "id": 78,
+    "kategori": "film",
+    "kategori_sirasi": 28,
+    "isim": "Mustang",
+    "yasaklılar": [
+      "kızlar",
+      "özgürlük",
+      "köy",
+      "baskı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/8lrsjdydRxhKlKiGuMbbzuFKrdN.jpg"
+  },
+  {
+    "id": 79,
+    "kategori": "film",
+    "kategori_sirasi": 29,
+    "isim": "The Godfather",
+    "yasaklılar": [
+      "mafya",
+      "baba",
+      "aile",
+      "suç"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 80,
+    "kategori": "film",
+    "kategori_sirasi": 30,
+    "isim": "Inception",
+    "yasaklılar": [
+      "rüya",
+      "zihin",
+      "Nolan",
+      "katman"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg"
+  },
+  {
+    "id": 81,
+    "kategori": "film",
+    "kategori_sirasi": 31,
+    "isim": "Interstellar",
+    "yasaklılar": [
+      "uzay",
+      "kara delik",
+      "zaman",
+      "Nolan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+  },
+  {
+    "id": 82,
+    "kategori": "film",
+    "kategori_sirasi": 32,
+    "isim": "Titanic",
+    "yasaklılar": [
+      "aşk",
+      "gemi",
+      "buzdağı",
+      "batmak"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+  },
+  {
+    "id": 83,
+    "kategori": "film",
+    "kategori_sirasi": 33,
+    "isim": "The Dark Knight",
+    "yasaklılar": [
+      "Batman",
+      "Joker",
+      "kahraman",
+      "Gotham"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 84,
+    "kategori": "film",
+    "kategori_sirasi": 34,
+    "isim": "The Matrix",
+    "yasaklılar": [
+      "Neo",
+      "simülasyon",
+      "makine",
+      "kapsül"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg"
+  },
+  {
+    "id": 85,
+    "kategori": "film",
+    "kategori_sirasi": 35,
+    "isim": "Joker",
+    "yasaklılar": [
+      "delilik",
+      "palyaço",
+      "toplum",
+      "Gotham"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+  },
+  {
+    "id": 86,
+    "kategori": "film",
+    "kategori_sirasi": 36,
+    "isim": "Forrest Gump",
+    "yasaklılar": [
+      "çikolata",
+      "koş",
+      "zeka",
+      "Tom"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+  },
+  {
+    "id": 87,
+    "kategori": "film",
+    "kategori_sirasi": 37,
+    "isim": "Fight Club",
+    "yasaklılar": [
+      "kavga",
+      "kimlik",
+      "kural",
+      "Brad"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+  },
+  {
+    "id": 88,
+    "kategori": "film",
+    "kategori_sirasi": 38,
+    "isim": "The Shawshank Redemption",
+    "yasaklılar": [
+      "hapishane",
+      "kaçış",
+      "umut",
+      "Andy"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+  },
+  {
+    "id": 89,
+    "kategori": "film",
+    "kategori_sirasi": 39,
+    "isim": "The Social Network",
+    "yasaklılar": [
+      "Facebook",
+      "Zuckerberg",
+      "internet",
+      "dava"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg"
+  },
+  {
+    "id": 90,
+    "kategori": "film",
+    "kategori_sirasi": 40,
+    "isim": "The Wolf of Wall Street",
+    "yasaklılar": [
+      "para",
+      "borsa",
+      "çılgın",
+      "Leonardo"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg"
+  },
+  {
+    "id": 91,
+    "kategori": "film",
+    "kategori_sirasi": 41,
+    "isim": "La La Land",
+    "yasaklılar": [
+      "dans",
+      "müzik",
+      "aşk",
+      "Ryan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+  },
+  {
+    "id": 92,
+    "kategori": "film",
+    "kategori_sirasi": 42,
+    "isim": "Parasite",
+    "yasaklılar": [
+      "Kore",
+      "fakir",
+      "zengin",
+      "ev"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/4DGPORlVIDIQvsuSDnM4uXKMjWS.jpg"
+  },
+  {
+    "id": 93,
+    "kategori": "film",
+    "kategori_sirasi": 43,
+    "isim": "The Revenant",
+    "yasaklılar": [
+      "ayı",
+      "kar",
+      "hayatta kalma",
+      "Leonardo"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ji3ecJphATlVgWNY0B0RVXZizdf.jpg"
+  },
+  {
+    "id": 94,
+    "kategori": "film",
+    "kategori_sirasi": 44,
+    "isim": "The Pianist",
+    "yasaklılar": [
+      "piyano",
+      "savaş",
+      "Naziler",
+      "Polonya"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg"
+  },
+  {
+    "id": 95,
+    "kategori": "film",
+    "kategori_sirasi": 45,
+    "isim": "Oppenheimer",
+    "yasaklılar": [
+      "atom",
+      "bomba",
+      "Nolan",
+      "savaş"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+  },
+  {
+    "id": 96,
+    "kategori": "film",
+    "kategori_sirasi": 46,
+    "isim": "Barbie",
+    "yasaklılar": [
+      "pembe",
+      "oyuncak",
+      "Ken",
+      "Margot"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
+  },
+  {
+    "id": 97,
+    "kategori": "film",
+    "kategori_sirasi": 47,
+    "isim": "Everything Everywhere All at Once",
+    "yasaklılar": [
+      "çoklu evren",
+      "annelik",
+      "tuhaf",
+      "kungfu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg"
+  },
+  {
+    "id": 98,
+    "kategori": "film",
+    "kategori_sirasi": 48,
+    "isim": "Dune",
+    "yasaklılar": [
+      "baharat",
+      "çöl",
+      "Paul",
+      "gelecek"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+  },
+  {
+    "id": 99,
+    "kategori": "film",
+    "kategori_sirasi": 49,
+    "isim": "Don't Look Up",
+    "yasaklılar": [
+      "meteor",
+      "dünya",
+      "bilim",
+      "felaket"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg"
+  },
+  {
+    "id": 100,
+    "kategori": "film",
+    "kategori_sirasi": 50,
+    "isim": "Avengers: Endgame",
+    "yasaklılar": [
+      "kahraman",
+      "Thanos",
+      "Marvel",
+      "zaman"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"
+  },
+  {
+    "id": 101,
+    "kategori": "dizi",
+    "kategori_sirasi": 1,
+    "isim": "Kızılcık Şerbeti",
+    "yasaklılar": [
+      "Doğa",
+      "Nursema",
+      "aile",
+      "farklı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/2x4jcQqkLUtGj7g9bs0ja5knnrb.jpg"
+  },
+  {
+    "id": 102,
+    "kategori": "dizi",
+    "kategori_sirasi": 2,
+    "isim": "Yalı Çapkını",
+    "yasaklılar": [
+      "Ferit",
+      "Seyran",
+      "konak",
+      "Antep"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/cgf5R2XrfRQGp2sTu3cncbnFxRy.jpg"
+  },
+  {
+    "id": 103,
+    "kategori": "dizi",
+    "kategori_sirasi": 3,
+    "isim": "Masumlar Apartmanı",
+    "yasaklılar": [
+      "temizlik",
+      "Han",
+      "travma",
+      "Gülben"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3QeTlVrs3hJUtXqhKt1FoDQx9ys.jpg"
+  },
+  {
+    "id": 104,
+    "kategori": "dizi",
+    "kategori_sirasi": 4,
+    "isim": "Camdaki Kız",
+    "yasaklılar": [
+      "Nalan",
+      "annelik",
+      "Rafet",
+      "psikoloji"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/vlMQ9Ws6DLJyj9lfa2ZPqVIvqkb.jpg"
+  },
+  {
+    "id": 105,
+    "kategori": "dizi",
+    "kategori_sirasi": 5,
+    "isim": "Leyla ile Mecnun",
+    "yasaklılar": [
+      "İsmail",
+      "absürt",
+      "Erdal",
+      "Mecnun"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3jPLJJXbFabb29mOxZOK0xctcy6.jpg"
+  },
+  {
+    "id": 106,
+    "kategori": "dizi",
+    "kategori_sirasi": 6,
+    "isim": "Gibi",
+    "yasaklılar": [
+      "Feyyaz",
+      "absürt",
+      "kısa",
+      "komedi"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/y1uhSlwcjuzOTxviRDqiMkExnVv.jpg"
+  },
+  {
+    "id": 107,
+    "kategori": "dizi",
+    "kategori_sirasi": 7,
+    "isim": "Şahsiyet",
+    "yasaklılar": [
+      "Agah",
+      "Alzheimer",
+      "katil",
+      "adliye"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/tvIDIV5zScFjt7kYYZe0pZd5Y8R.jpg"
+  },
+  {
+    "id": 108,
+    "kategori": "dizi",
+    "kategori_sirasi": 8,
+    "isim": "Behzat Ç.",
+    "yasaklılar": [
+      "Ankara",
+      "komiser",
+      "polis",
+      "cinayet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/aRqNQ5v2tvZ9ZRAXpYik0JamHkm.jpg"
+  },
+  {
+    "id": 109,
+    "kategori": "dizi",
+    "kategori_sirasi": 9,
+    "isim": "Erşan Kuneri",
+    "yasaklılar": [
+      "retro",
+      "erotik",
+      "film",
+      "Cem"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/AdmyBnD3GRBBAJ6F5EIcO6JjQO5.jpg"
+  },
+  {
+    "id": 110,
+    "kategori": "dizi",
+    "kategori_sirasi": 10,
+    "isim": "Bir Başkadır",
+    "yasaklılar": [
+      "Meryem",
+      "psikolog",
+      "Netflix",
+      "başörtü"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/80xsUbpereUwUGaaMwcM9e2QLCq.jpg"
+  },
+  {
+    "id": 111,
+    "kategori": "dizi",
+    "kategori_sirasi": 11,
+    "isim": "Ezel",
+    "yasaklılar": [
+      "Ömer",
+      "Ramiz",
+      "intikam",
+      "Eyşan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/79FAJrz4wWBzlhyof1cLY1qM231.jpg"
+  },
+  {
+    "id": 112,
+    "kategori": "dizi",
+    "kategori_sirasi": 12,
+    "isim": "Çukur",
+    "yasaklılar": [
+      "Yamaç",
+      "mahalle",
+      "silah",
+      "Koçovalı"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/7aL9P5NLSgBjdChcwp4cH1OLdKf.jpg"
+  },
+  {
+    "id": 113,
+    "kategori": "dizi",
+    "kategori_sirasi": 13,
+    "isim": "Aşk-ı Memnu",
+    "yasaklılar": [
+      "Bihter",
+      "Behlül",
+      "yasak",
+      "Halit"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/xHulNzEqtgkTuwrRorBRXdGzHML.jpg"
+  },
+  {
+    "id": 114,
+    "kategori": "dizi",
+    "kategori_sirasi": 14,
+    "isim": "Sadakatsiz",
+    "yasaklılar": [
+      "Asya",
+      "aldatma",
+      "doktor",
+      "Volkan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/i4dD4K0udXVosxOa7wBXpkCKgP1.jpg"
+  },
+  {
+    "id": 115,
+    "kategori": "dizi",
+    "kategori_sirasi": 15,
+    "isim": "Jet Sosyete",
+    "yasaklılar": [
+      "Gülse",
+      "komedi",
+      "zengin",
+      "site"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/aNaQzTrPWFeJV89na2G1mXuleHO.jpg"
+  },
+  {
+    "id": 116,
+    "kategori": "dizi",
+    "kategori_sirasi": 16,
+    "isim": "Avrupa Yakası",
+    "yasaklılar": [
+      "Burhan",
+      "ofis",
+      "Aslı",
+      "sitcom"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/p73Sua1a2AO6nwNpwhDrkKjBP8q.jpg"
+  },
+  {
+    "id": 117,
+    "kategori": "dizi",
+    "kategori_sirasi": 17,
+    "isim": "Avlu",
+    "yasaklılar": [
+      "cezaevi",
+      "kadın",
+      "hapishane",
+      "şiddet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/njo3iQWyK6PXWAcbs6Ykx9gGn6l.jpg"
+  },
+  {
+    "id": 118,
+    "kategori": "dizi",
+    "kategori_sirasi": 18,
+    "isim": "Poyraz Karayel",
+    "yasaklılar": [
+      "Poyraz",
+      "mafya",
+      "aşk",
+      "polis"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/giR4mxgHH9BKnfhhaCG6w27efw3.jpg"
+  },
+  {
+    "id": 119,
+    "kategori": "dizi",
+    "kategori_sirasi": 19,
+    "isim": "Fi",
+    "yasaklılar": [
+      "Can",
+      "dans",
+      "psikoloji",
+      "Duru"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/yypGXmBPvyJiD7pOeD2R3q84FlA.jpg"
+  },
+  {
+    "id": 120,
+    "kategori": "dizi",
+    "kategori_sirasi": 20,
+    "isim": "Kara Sevda",
+    "yasaklılar": [
+      "Nihan",
+      "aşk",
+      "Kemal",
+      "ölüm"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/qEkRGqfoV9ziKiPLOa3fZaaYjhG.jpg"
+  },
+  {
+    "id": 121,
+    "kategori": "dizi",
+    "kategori_sirasi": 21,
+    "isim": "Kuzey Güney",
+    "yasaklılar": [
+      "kardeş",
+      "aşk",
+      "Kuzey",
+      "Güney"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/eG35U9iYp6cWigQxIpzwlPEPY0l.jpg"
+  },
+  {
+    "id": 122,
+    "kategori": "dizi",
+    "kategori_sirasi": 22,
+    "isim": "Kara Para Aşk",
+    "yasaklılar": [
+      "Elif",
+      "polis",
+      "dedektif",
+      "para"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ud39J949yldVdbmyLottd9E2VeW.jpg"
+  },
+  {
+    "id": 123,
+    "kategori": "dizi",
+    "kategori_sirasi": 23,
+    "isim": "Yargı",
+    "yasaklılar": [
+      "Ceylin",
+      "Ilgaz",
+      "mahkeme",
+      "katil"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/c2WubXZ2npBH14uTqirRREzFY0h.jpg"
+  },
+  {
+    "id": 124,
+    "kategori": "dizi",
+    "kategori_sirasi": 24,
+    "isim": "İnci Taneleri",
+    "yasaklılar": [
+      "Azem",
+      "Dilber",
+      "pavyon",
+      "türkü"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/4lVO7SDv4OcbdelTvSB1Onw8cEN.jpg"
+  },
+  {
+    "id": 125,
+    "kategori": "dizi",
+    "kategori_sirasi": 25,
+    "isim": "İçerde",
+    "yasaklılar": [
+      "Sarp",
+      "Mert",
+      "gizli",
+      "polis"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/63v7p8t5sShiCGRLzePlgCu6TNj.jpg"
+  },
+  {
+    "id": 126,
+    "kategori": "dizi",
+    "kategori_sirasi": 26,
+    "isim": "Breaking Bad",
+    "yasaklılar": [
+      "Walter",
+      "Heisenberg",
+      "kimya",
+      "uyuşturucu"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/ineLOBPG8AZsluYwnkMpHRyu7L.jpg"
+  },
+  {
+    "id": 127,
+    "kategori": "dizi",
+    "kategori_sirasi": 27,
+    "isim": "Better Call Saul",
+    "yasaklılar": [
+      "avukat",
+      "dava",
+      "Jimmy",
+      "mahkeme"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg"
+  },
+  {
+    "id": 128,
+    "kategori": "dizi",
+    "kategori_sirasi": 28,
+    "isim": "Game of Thrones",
+    "yasaklılar": [
+      "taht",
+      "Stark",
+      "ejderha",
+      "Westeros"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg"
+  },
+  {
+    "id": 129,
+    "kategori": "dizi",
+    "kategori_sirasi": 29,
+    "isim": "House of the Dragon",
+    "yasaklılar": [
+      "Targaryen",
+      "ejderha",
+      "Viserys",
+      "saray"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/oxmdHR5Ka28HAJuMmS2hk5K6QQY.jpg"
+  },
+  {
+    "id": 130,
+    "kategori": "dizi",
+    "kategori_sirasi": 30,
+    "isim": "Stranger Things",
+    "yasaklılar": [
+      "Eleven",
+      "canavar",
+      "Upside",
+      "çocuk"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg"
+  },
+  {
+    "id": 131,
+    "kategori": "dizi",
+    "kategori_sirasi": 31,
+    "isim": "The Last of Us",
+    "yasaklılar": [
+      "Joel",
+      "Ellie",
+      "mantar",
+      "kıyamet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg"
+  },
+  {
+    "id": 132,
+    "kategori": "dizi",
+    "kategori_sirasi": 32,
+    "isim": "The Witcher",
+    "yasaklılar": [
+      "Geralt",
+      "canavar",
+      "Yennefer",
+      "büyü"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg"
+  },
+  {
+    "id": 133,
+    "kategori": "dizi",
+    "kategori_sirasi": 33,
+    "isim": "Dark",
+    "yasaklılar": [
+      "zaman",
+      "Jonas",
+      "Almanya",
+      "mağara"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg"
+  },
+  {
+    "id": 134,
+    "kategori": "dizi",
+    "kategori_sirasi": 34,
+    "isim": "The Office",
+    "yasaklılar": [
+      "ofis",
+      "Michael",
+      "komedi",
+      "kağıt"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg"
+  },
+  {
+    "id": 135,
+    "kategori": "dizi",
+    "kategori_sirasi": 35,
+    "isim": "Friends",
+    "yasaklılar": [
+      "Rachel",
+      "kahve",
+      "Joey",
+      "New York"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg"
+  },
+  {
+    "id": 136,
+    "kategori": "dizi",
+    "kategori_sirasi": 36,
+    "isim": "How I Met Your Mother",
+    "yasaklılar": [
+      "Ted",
+      "Barney",
+      "çocuk",
+      "hikaye"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg"
+  },
+  {
+    "id": 137,
+    "kategori": "dizi",
+    "kategori_sirasi": 37,
+    "isim": "Peaky Blinders",
+    "yasaklılar": [
+      "mafya",
+      "Shelby",
+      "İngiltere",
+      "Tommy"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg"
+  },
+  {
+    "id": 138,
+    "kategori": "dizi",
+    "kategori_sirasi": 38,
+    "isim": "The Crown",
+    "yasaklılar": [
+      "Elizabeth",
+      "kraliçe",
+      "saray",
+      "İngiltere"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/1DDE0Z2Y805rqfkEjPbZsMLyPwa.jpg"
+  },
+  {
+    "id": 139,
+    "kategori": "dizi",
+    "kategori_sirasi": 39,
+    "isim": "Euphoria",
+    "yasaklılar": [
+      "Rue",
+      "uyuşturucu",
+      "lise",
+      "genç"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg"
+  },
+  {
+    "id": 140,
+    "kategori": "dizi",
+    "kategori_sirasi": 40,
+    "isim": "You",
+    "yasaklılar": [
+      "Joe",
+      "saplantı",
+      "stalker",
+      "cinayet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg"
+  },
+  {
+    "id": 141,
+    "kategori": "dizi",
+    "kategori_sirasi": 41,
+    "isim": "Money Heist",
+    "yasaklılar": [
+      "Profesör",
+      "soygun",
+      "maske",
+      "ekip"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg"
+  },
+  {
+    "id": 142,
+    "kategori": "dizi",
+    "kategori_sirasi": 42,
+    "isim": "Black Mirror",
+    "yasaklılar": [
+      "teknoloji",
+      "gelecek",
+      "bölüm",
+      "karanlık"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg"
+  },
+  {
+    "id": 143,
+    "kategori": "dizi",
+    "kategori_sirasi": 43,
+    "isim": "Prison Break",
+    "yasaklılar": [
+      "Michael",
+      "kaçış",
+      "hapishane",
+      "plan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/5E1BhkCgjLBlqx557Z5yzcN0i88.jpg"
+  },
+  {
+    "id": 144,
+    "kategori": "dizi",
+    "kategori_sirasi": 44,
+    "isim": "Suits",
+    "yasaklılar": [
+      "Harvey",
+      "dava",
+      "avukat",
+      "ofis"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbC6TuoDjy.jpg"
+  },
+  {
+    "id": 145,
+    "kategori": "dizi",
+    "kategori_sirasi": 45,
+    "isim": "Sherlock",
+    "yasaklılar": [
+      "dedektif",
+      "Watson",
+      "zeka",
+      "Londra"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/cIfGAkpvWD2zxHrXzhv3uptYbyV.jpg"
+  },
+  {
+    "id": 146,
+    "kategori": "dizi",
+    "kategori_sirasi": 46,
+    "isim": "Vikings",
+    "yasaklılar": [
+      "Ragnar",
+      "savaş",
+      "İskandinav",
+      "kalkan"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg"
+  },
+  {
+    "id": 147,
+    "kategori": "dizi",
+    "kategori_sirasi": 47,
+    "isim": "The 100",
+    "yasaklılar": [
+      "genç",
+      "dünya",
+      "uzay",
+      "kıyamet"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/wcaDIAG1QdXQLRaj4vC1EFdBT2.jpg"
+  },
+  {
+    "id": 148,
+    "kategori": "dizi",
+    "kategori_sirasi": 48,
+    "isim": "The Mandalorian",
+    "yasaklılar": [
+      "Grogu",
+      "uzay",
+      "zırh",
+      "bounty"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg"
+  },
+  {
+    "id": 149,
+    "kategori": "dizi",
+    "kategori_sirasi": 49,
+    "isim": "The Umbrella Academy",
+    "yasaklılar": [
+      "kardeş",
+      "zaman",
+      "okul",
+      "süper"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg"
+  },
+  {
+    "id": 150,
+    "kategori": "dizi",
+    "kategori_sirasi": 50,
+    "isim": "Loki",
+    "yasaklılar": [
+      "zaman",
+      "tanrı",
+      "Marvel",
+      "çoklu evren"
+    ],
+    "image_url": "https://image.tmdb.org/t/p/w500/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg"
+  }
+]

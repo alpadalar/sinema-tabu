@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Kelime Listesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kelime Listesi</h1>
+            <p class="subtitle">Kelimeleri düzenleyin ve yönetin</p>
+        </header>
+
+        <main>
+            {% set categories = ['aktör', 'film', 'dizi'] %}
+            {% for category in categories %}
+            <div class="category-section">
+                <div class="category-header" onclick="toggleCategory('{{ category }}')">
+                    <h2>
+                        <i class="fas fa-chevron-right category-icon" id="icon-{{ category }}"></i>
+                        {{ category|capitalize }}
+                    </h2>
+                    <span class="word-count">{{ words|selectattr("kategori", "equalto", category)|list|length }} kelime</span>
+                </div>
+                
+                <div class="word-grid" id="category-{{ category }}" style="display: none;">
+                    {% set category_words = words|selectattr("kategori", "equalto", category)|sort(attribute="isim") %}
+                    {% for word in category_words %}
+                    <div class="word-card {% if word.disabled %}disabled{% endif %}" data-word-id="{{ word.id }}">
+                        <div class="word-header">
+                            <h3>{{ word.isim }}</h3>
+                            <span class="category-badge">{{ word.kategori }}</span>
+                        </div>
+
+                        {% if word.resim or word.image_url %}
+                        <div class="word-image">
+                            <img src="{{ word.resim or word.image_url }}" alt="{{ word.isim }}" onerror="this.style.display='none'">
+                        </div>
+                        {% endif %}
+
+                        <div class="word-forbidden">
+                            <h4>Yasaklı Kelimeler:</h4>
+                            <ul>
+                                {% for forbidden in word.yasaklılar %}
+                                <li>{{ forbidden }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <div class="word-actions">
+                            <button class="button toggle-word {% if word.disabled %}success-button{% else %}danger-button{% endif %}" 
+                                    data-word-id="{{ word.id }}">
+                                {% if word.disabled %}
+                                <i class="fas fa-check-circle"></i>
+                                Etkinleştir
+                                {% else %}
+                                <i class="fas fa-ban"></i>
+                                Devre Dışı Bırak
+                                {% endif %}
+                            </button>
+                            <a href="{{ url_for('edit_word', word_id=word.id) }}" class="button">
+                                <i class="fas fa-edit"></i>
+                                Düzenle
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="form-actions">
+                <a href="{{ url_for('add_word') }}" class="button success-button">
+                    <i class="fas fa-plus"></i>
+                    Yeni Kelime Ekle
+                </a>
+                <a href="{{ url_for('index') }}" class="button">
+                    <i class="fas fa-arrow-left"></i>
+                    Ana Sayfaya Dön
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleCategory(category) {
+            const content = document.getElementById(`category-${category}`);
+            const icon = document.getElementById(`icon-${category}`);
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'grid';
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.style.display = 'none';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-right');
+            }
+        }
+
+        document.querySelectorAll('.toggle-word').forEach(button => {
+            button.addEventListener('click', async function() {
+                const wordId = this.dataset.wordId;
+                const wordCard = this.closest('.word-card');
+                
+                try {
+                    const response = await fetch(`/toggle_word/${wordId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok && data.success) {
+                        if (data.new_state) {
+                            wordCard.classList.add('disabled');
+                            this.classList.remove('danger-button');
+                            this.classList.add('success-button');
+                            this.innerHTML = '<i class="fas fa-check-circle"></i> Etkinleştir';
+                        } else {
+                            wordCard.classList.remove('disabled');
+                            this.classList.remove('success-button');
+                            this.classList.add('danger-button');
+                            this.innerHTML = '<i class="fas fa-ban"></i> Devre Dışı Bırak';
+                        }
+                    } else {
+                        alert('İşlem başarısız oldu: ' + (data.error || 'Bilinmeyen hata'));
+                    }
+                } catch (error) {
+                    console.error('Hata:', error);
+                    alert('Bir hata oluştu: ' + error.message);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

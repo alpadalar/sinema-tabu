@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Oyun Sonu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Oyun Bitti!</h1>
+        </header>
+
+        <main>
+            <div class="score-card">
+                <h2>Puan Tablosu</h2>
+                <div class="score-details">
+                    <div class="score-item correct">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="label">Doğru Tahminler:</span>
+                        <span class="value">{{ score.correct }}</span>
+                    </div>
+                    <div class="score-item taboo">
+                        <i class="fas fa-times-circle"></i>
+                        <span class="label">Tabu Kelimeler:</span>
+                        <span class="value">{{ score.taboo }}</span>
+                    </div>
+                    <div class="score-item total">
+                        <i class="fas fa-star"></i>
+                        <span class="label">Toplam Puan:</span>
+                        <span class="value">{{ score.correct - score.taboo }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="{{ url_for('index') }}" class="button">
+                    <i class="fas fa-home"></i>
+                    Ana Sayfa
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

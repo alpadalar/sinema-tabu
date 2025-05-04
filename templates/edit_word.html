@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Tabu - Kelime Düzenle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kelime Düzenle</h1>
+            <p class="subtitle">Kelime bilgilerini güncelleyin</p>
+        </header>
+
+        <main>
+            <form method="POST" class="add-word-form">
+                <div class="form-group">
+                    <label for="word">Kelime:</label>
+                    <input type="text" id="word" name="word" value="{{ word.word }}" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="radio" name="category" value="aktör" {% if word.category == 'aktör' %}checked{% endif %}>
+                            <span>Aktör</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="category" value="film" {% if word.category == 'film' %}checked{% endif %}>
+                            <span>Film</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="radio" name="category" value="dizi" {% if word.category == 'dizi' %}checked{% endif %}>
+                            <span>Dizi</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="forbidden">Yasaklı Kelimeler (virgülle ayırın):</label>
+                    <input type="text" id="forbidden" name="forbidden" value="{{ word.forbidden }}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="image_url">Resim URL'si (isteğe bağlı):</label>
+                    <input type="url" id="image_url" name="image_url" value="{{ word.image_url }}" placeholder="https://example.com/image.jpg">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button success-button">
+                        <i class="fas fa-save"></i>
+                        Kaydet
+                    </button>
+                    <a href="{{ url_for('word_settings') }}" class="button">
+                        <i class="fas fa-arrow-left"></i>
+                        Geri Dön
+                    </a>
+                </div>
+            </form>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </main>
+    </div>
+</body>
+</html> 
